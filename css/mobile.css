@@ -1,0 +1,24 @@
+@media screen and (min-width: 480px) {
+    .container {
+        width: 426px;
+    }
+/*====================HERO=================*/
+    .hero-tetle {
+        font-size: 36px;
+        line-height: 1.11;
+    }
+/*---------------MODAL WINDOW--------------------------------*/
+.modal {
+    width: 392px;
+}
+.check-text {
+    font-size: 12px;
+    line-height: 1.3;
+    flex-wrap: nowrap;
+}
+.policy-link {
+    font-size: 12px;
+    line-height: 1.3;
+    margin: 0;
+}
+}

@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
@@ -39,18 +42,89 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-list list">
-          <li class="header-item">
+        <ul class="header-list-cont list">
+          <li class="header-item-cont">
             <a class="header-mailto link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
+          <li class="header-item-cont">
             <a class="header-tel link" href="tel:+11000111-11-11"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu_container">
+          <button class="mobile-menu_close-btn js-close-menu">
+            <svg class="mobile-menu_close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-1-1"></use>
+            </svg>
+          </button>
+          <ul class="mobile-list list">
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link current" href="./index.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-cont-list list">
+            <li>
+              <a class="mobile-tel-link link" href="tel:+11000111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-mailto-item">
+              <a
+                class="mobile-mailto-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-soc-list list">
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -105,6 +179,7 @@
               <img
                 src="./images/monitor.jpg"
                 alt="computers and gadgets"
+                srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -113,6 +188,7 @@
               <img
                 src="./images/telefon.jpg"
                 alt="computers and gadgets"
+                srcset="./images/telefon.jpg 1x, ./images/telefon-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -121,6 +197,10 @@
               <img
                 src="./images/phone-in-hand.jpg"
                 alt="computers and gadgets"
+                srcset="
+                  ./images/phone-in-hand.jpg    1x,
+                  ./images/phone-in-hand-2x.jpg 2x
+                "
                 width="360"
                 height="300"
               />
@@ -136,6 +216,7 @@
               <img
                 src="./images/mark1.jpg"
                 alt="Foto Mark"
+                srcset="./images/mark1.jpg 1x, ./images/mark1-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -176,6 +257,7 @@
               <img
                 src="./images/tom2.jpg"
                 alt="Foto Tom"
+                srcset="./images/tom2.jpg 1x, ./images/tom2-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -216,6 +298,7 @@
               <img
                 src="./images/gamila3.jpg"
                 alt="Foto Gamila"
+                srcset="./images/gamila3.jpg 1x, ./images/gamila3-2x.jpg 2x" 
                 width="264"
                 height="260"
               />
@@ -256,6 +339,7 @@
               <img
                 src="./images/daniel4.jpg"
                 alt="Foto Daniel"
+                srcset="./images/daniel4.jpg 1x, ./images/daniel4-2x.jpg 2x"
                 width="264"
                 height="260"
               />
@@ -347,7 +431,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="logo">
           <a class="footer-logo link" href="/"
             ><span class="footer-logo-blue">WEB</span>STUDIO</a
           >
@@ -491,6 +575,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

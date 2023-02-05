@@ -64,10 +64,12 @@
        letter-spacing: 0.04em;
        color: var(--black-title-color);
        padding-top: 24px;
-       margin-bottom: 4px;
        transition-property: color;
        transition-duration: 250ms;
        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .header-item-malto {
+      margin-bottom: 4px;
    }
 
    .header-tel {
@@ -123,7 +125,9 @@
     .skills-item {
         width: calc((100% - 24px) / 2);
     }
-
+    .skills-title {
+       text-align: left;
+    }
     /*=========TEAM=================*/
     .team {
         padding-bottom: 104px;
@@ -161,7 +165,7 @@
     }
 /*==========FOOTER==================*/
   .footer-logo {
-    justify-content: start;
+    text-align: start;
   }
   .footer > .container {
     width: 582px;
